@@ -1,0 +1,52 @@
+.burger {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+    padding: 2px;
+    padding: 4px;
+    background-color: transparent;
+}
+
+.burger div {
+    transition: all .3s ease-in-out;
+    height: 2px;
+    width: 100%;
+    background-color: var(--text-color);
+    transition: 0.2s;
+    transform: none;
+    transform-origin: left top;
+    margin-bottom: 6px;
+}
+
+.burger div:nth-child(2) {
+    width: 65%;
+}
+
+.burger div:last-child {
+    margin-bottom: 0;
+}
+
+.burger.active {
+    align-items: center;
+}
+
+.burger.active div:nth-child(1) {
+    transform: rotate(45deg) translateY(3px);
+    transform-origin: left top;
+    margin-bottom: 5px;
+}
+
+.burger.active div:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-16px);
+}
+
+.burger.active div:nth-child(3) {
+    transform: translateX(-3px) rotate(-45deg);
+    transform-origin: left top;
+    margin-top: 5px;
+}
