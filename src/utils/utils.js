@@ -7,7 +7,7 @@ export const navLinks = [
 ];
 
 export const userSample = {
-  id: "000Gv678Iom1Q",
+  id: "760321369",
   last_name: "Petr",
   first_name: "Petrov",
 };
