@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <header className={ headerClasses }>
       <div className="container header__container">
-        <Link to={"/"} className="economica header__logo">Fitness</Link>
+        <Link to={"/"} className="economica header__logo">Fitness-Timeout</Link>
         <Burger setSidebar={setSidebar} active={sidebar} />
       </div>
       <Sidebar open={sidebar} toggleOpen={setSidebar} />
